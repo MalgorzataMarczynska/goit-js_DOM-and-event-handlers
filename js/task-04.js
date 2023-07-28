@@ -17,7 +17,6 @@ const output = document.querySelector("#value");
 
 //--wersja krótsza - funkcyjna
 const counter = (event) => {
-  const button = document.querySelectorAll("button");
   counterValue += Number(event.currentTarget.textContent);
   output.textContent = counterValue;
 };

@@ -15,7 +15,6 @@ input.addEventListener("input", (event) => {
 });
 
 function createBoxes(amount) {
-  //let randomColor = getRandomHexColor();
   for (let i = 0; i < amount; i++) {
     if (amount > 100) {
       alert(

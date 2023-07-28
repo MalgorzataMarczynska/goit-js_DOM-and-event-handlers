@@ -2,10 +2,10 @@
 
 const validationInput = document.querySelector("#validation-input");
 
-const stringLength = () => {
-  const field = validationInput.value;
-  const optlength = validationInput.dataset.length;
-  if (field.length == optlength) {
+const checkStringLength = () => {
+  const userString = validationInput.value;
+  const optLength = validationInput.dataset.length;
+  if (userString.length == optLength) {
     validationInput.classList.add("valid");
     validationInput.classList.remove("invalid");
     return;
@@ -14,4 +14,4 @@ const stringLength = () => {
   validationInput.classList.remove("valid");
   return;
 };
-validationInput.addEventListener("blur", stringLength);
+validationInput.addEventListener("blur", checkStringLength);
